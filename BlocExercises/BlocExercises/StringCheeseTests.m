@@ -53,6 +53,9 @@
 
 - (void)testThatRemovingCheeseSuffixWorksWithUppercaseC {
     NSString *fullCheeseString = @"Colby Cheese";
+    
+    
+    
     NSString *cheeseNameOnly = [self.stringCheese cheeseNameWithoutCheeseSuffix:fullCheeseString];
     XCTAssertEqualObjects(cheeseNameOnly, @"Colby", @"Colby should be returned.");
 }
