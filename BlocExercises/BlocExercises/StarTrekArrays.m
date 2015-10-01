@@ -33,15 +33,17 @@
     
     [mutableCharacterArray filterUsingPredicate:containsWorf];
     
-    for (NSString *word in mutableCharacterArray) {
-        
-        if ( [word.lowercaseString  isEqual: @"worf"] ) {
-            return YES;
-        }
-        
-    }
+    return (mutableCharacterArray.count >=1) ? YES : NO ;
     
-    return NO;
+//    for (NSString *word in mutableCharacterArray) {
+//        
+//        if ( [word.lowercaseString  isEqual: @"worf"] ) {
+//            return YES;
+//        }
+//        
+//    }
+    
+//    return NO;
 }
 
 @end
